@@ -1,0 +1,209 @@
+.header {
+    position: absolute;
+    height: 82px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+}
+
+
+.container {
+    position: absolute;
+    width: 1353.62px;
+    height: 53.5px;
+    left: calc(50% - 1353.62px/2);
+    top: calc(50% - 53.5px/2 - 0.25px);
+}
+
+/* Rectangle */
+.background {
+    position: absolute;
+    height: 82px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+
+    background: rgba(12, 13, 46, 0.9);
+    border-radius: 0px;
+}
+
+.menu {
+    position: absolute;
+    height: 48px;
+    left: 55.23%;
+    right: 0%;
+    top: calc(50% - 48px/2);
+}
+
+/* Features */
+.features {
+    position: absolute;
+    height: 20px;
+    left: 16.37%;
+    right: 72.58%;
+    top: calc(50% - 20px / 2 - 0.75px);
+
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    /* identical to box height, or 111% */
+
+    color: #FFFFFF;
+}
+
+
+/* Pricing */
+.pricing {
+    position: absolute;
+    height: 20px;
+    left: 45.58%;
+    right: 45.68%;
+    top: calc(50% - 20px / 2 - 0.75px);
+
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    /* identical to box height, or 111% */
+
+    color: #FCFEFF;
+}
+
+
+/* Frame */
+.frame {
+    position: absolute;
+    height: 48px;
+    left: 72.97%;
+    right: -0.03%;
+    top: calc(50% - 48px / 2 + 0.25px);
+}
+
+
+/* Rectangle */
+.rectangle {
+    box-sizing: border-box;
+
+    position: absolute;
+    height: 48px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+
+    border: 2px solid #FFFFFF;
+    border-radius: 100px;
+}
+
+/* Buy CrypAppy */
+.buyCrypAppy {
+    position: absolute;
+    height: 16px;
+    left: 19.51%;
+    right: 19.51%;
+    top: calc(50% - 16px / 2 - 1px);
+
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+
+    color: #FFFFFF;
+}
+
+
+/* Benefits */
+.benefits {
+    position: absolute;
+    height: 20px;
+    left: 2.01%;
+    right: 87.59%;
+    top: calc(50% - 20px / 2 - 0.75px);
+
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    /* identical to box height, or 111% */
+
+    color: #FFFFFF;
+}
+
+
+/* Contact */
+.contact {
+    position: absolute;
+    height: 20px;
+    left: 58.28%;
+    right: 31.65%;
+    top: calc(50% - 20px / 2 - 0.75px);
+
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    /* identical to box height, or 111% */
+
+    color: #189CE8;
+}
+
+
+/* Reviews */
+.reviews {
+    position: absolute;
+    height: 20px;
+    left: 31.38%;
+    right: 58.38%;
+    top: calc(50% - 20px / 2 - 0.75px);
+
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    /* identical to box height, or 111% */
+
+    color: #FFFFFF;
+}
+
+
+/* Frame */
+.buyCrypAppy_container {
+    position: absolute;
+    height: 48px;
+    left: 72.97%;
+    right: -0.03%;
+    top: calc(50% - 48px / 2 + 0.25px);
+}
+
+.buyCrypAppy_rectangle {
+    box-sizing: border-box;
+
+    position: absolute;
+    height: 48px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+
+    border: 2px solid #FFFFFF;
+    border-radius: 100px;
+}
+
+/* IMAGE */
+.image {
+    position: absolute;
+    height: 54px;
+    left: -0.01%;
+    right: 87.16%;
+    top: calc(50% - 54px / 2 + 0.25px);
+
+    background: url('./IMAGE.png');
+    border-radius: 0px;
+}
+
