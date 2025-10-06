@@ -1,7 +1,61 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './FirstBlock.module.css';
 
+const AnimatedNumber = ({ value, suffix = '', isVisible }) => {
+  const [displayValue, setDisplayValue] = useState(0);
+  const targetValue = useRef(0);
+  const animationRef = useRef();
+  const hasAnimated = useRef(false);
+
+  useEffect(() => {
+    if (isVisible && !hasAnimated.current) {
+      hasAnimated.current = true;
+      targetValue.current = value;
+      
+      const duration = 4000;
+      const startTime = Date.now();
+      
+      const animate = () => {
+        const currentTime = Date.now();
+        const progress = Math.min((currentTime - startTime) / duration, 1);
+
+        const easeOutQuad = t => t * (2 - t);
+        const currentValue = Math.floor(easeOutQuad(progress) * targetValue.current);
+        
+        setDisplayValue(currentValue);
+        
+        if (progress < 1) {
+          animationRef.current = requestAnimationFrame(animate);
+        }
+      };
+      
+      animationRef.current = requestAnimationFrame(animate);
+    }
+    
+    return () => {
+      if (animationRef.current) {
+        cancelAnimationFrame(animationRef.current);
+      }
+    };
+  }, [isVisible, value]);
+  
+  return <span>{displayValue.toLocaleString()}{suffix}</span>;
+};
+
 const FirstBlock = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const statsRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100 && !isVisible) {
+        setIsVisible(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [isVisible]);
     return (
         <div className={styles.container}>
             <div className={styles.content_left}>
@@ -29,17 +83,26 @@ const FirstBlock = () => {
 
                     </div>
                 </div>
-                <div className={styles.stats}>
+                <div 
+                  ref={statsRef}
+                  className={`${styles.stats} ${isVisible ? styles.visible : ''}`}
+                >
                     <div className={styles.stats_card1}>
-                        <p className={styles.number}><span>8.9</span>K</p>
+                        <p className={styles.number}>
+                            <AnimatedNumber value={8.9} isVisible={isVisible} />K
+                        </p>
                         <p className={styles.label}>Art work</p>
                     </div>
                     <div className={styles.stats_card2}>
-                        <p className={styles.number}><span>65</span>K</p>
+                        <p className={styles.number}>
+                            <AnimatedNumber value={65} isVisible={isVisible} />K
+                        </p>
                         <p className={styles.label}>Artists</p>
                     </div>
                     <div className={styles.stats_card3}>
-                        <p className={styles.number}><span>87</span>K</p>
+                        <p className={styles.number}>
+                            <AnimatedNumber value={87} isVisible={isVisible} />K
+                        </p>
                         <p className={styles.label}>Collections</p>
                     </div>
                 </div>

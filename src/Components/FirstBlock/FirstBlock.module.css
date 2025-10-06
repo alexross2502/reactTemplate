@@ -310,6 +310,13 @@
     width: 100%;
     max-width: 500px;
     margin-left: -28px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    will-change: opacity;
+}
+
+.stats.visible {
+    opacity: 1;
 }
 
 .stats_card1, .stats_card2, .stats_card3 {
