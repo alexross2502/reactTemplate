@@ -3,6 +3,7 @@ import Header from "./Components/Header/Header";
 import FirstBlock from "./Components/FirstBlock/FirstBlock";
 import SecondBlock from "./Components/SecondBlock/SecondBlock";
 import ThirdBlock from "./Components/ThirdBlock/ThirdBlock";
+import Animation from "./Components/Animation/Animation";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <FirstBlock />
       <SecondBlock />
       <ThirdBlock />
+      <Animation />
     </div>
   );
 }
