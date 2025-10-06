@@ -10,7 +10,11 @@ const ThirdBlock = () => {
                     <span><p>Amazing</p> and Super Unique Art of This <p>Week</p></span>
                 </div>
                 <div className={styles.cta}>
-                    <p className={styles.button}>Explore</p>
+                    <span>Explore</span>
+                    <span>Explore</span>
+                    <span>Explore</span>
+                    <span>Explore</span>
+                    <span>Explore</span>
                 </div>
             </div>
             <div className={styles.cards}>
