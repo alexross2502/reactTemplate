@@ -41,10 +41,9 @@ const FirstBlock = () => {
                 </div>
             </div>
             <div className={styles.content_right}>
-              <div className={styles.robot}>
-                  <div className={styles.image}>
-                  </div>
-              </div>
+
+                  <div className={styles.image}></div>
+
             </div>
         </div>
     );

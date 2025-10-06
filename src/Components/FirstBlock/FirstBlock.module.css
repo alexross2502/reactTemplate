@@ -253,6 +253,7 @@
     display: flex;
     width: 100%;
     max-width: 500px;
+    margin-left: -28px;
 }
 
 .stats_card1, .stats_card2, .stats_card3 {
@@ -356,8 +357,8 @@
     position: absolute;
     width: 464px;
     height: 512px;
-
-    background: url(image.png);
+    right: 111px;
+    background: url(image.png) no-repeat;
     border-radius: 24px;
 
 }

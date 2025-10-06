@@ -1,0 +1,604 @@
+.container {
+    /* Amazing art work thi week */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 92px 111px;
+    gap: 64px;
+    isolation: isolate;
+
+    position: absolute;
+    width: 100vw;
+    height: 862px;
+    left: 0px;
+    top: 760px;
+}
+
+.header {
+    /* Frame 34073 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 10px;
+
+    width: 100%;
+    height: 116px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    z-index: 1;
+
+}
+
+.text {
+    /* Amazing and Super Unique Art of This Week */
+
+    width: 40%;
+    height: 116px;
+
+    /* H2 */
+    font-family: 'Canela';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 120%;
+    /* or 58px */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: #FFFFFD;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.text p {
+    display: inline;
+    color: #D6EF0E;
+}
+
+.cards {
+    /* Cards */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+
+    width: 100%;
+    height: 498px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    z-index: 2;
+    justify-content: space-between;
+
+}
+
+.cta {
+    /* CTA */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 40px;
+    gap: 12px;
+
+    width: 134px;
+    height: 52px;
+
+    background: #D6EF0E;
+    border-radius: 8px;
+    justify-content: right;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-bottom: 5px;
+
+}
+
+.button {
+    /* See All */
+
+    width: 54px;
+    height: 19px;
+
+    /* H5 */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    /* or 19px */
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.card1 {
+    /* 1 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+
+    width: 31%;
+    height: 498px;
+
+    /* Background/background4 */
+    background: #131E3A;
+    border-top: 1px solid #D6EF0E;
+    border-radius: 28px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+gap:20px;
+}
+
+.card2 {
+    /* 2 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+
+    width: 31%;
+    height: 498px;
+
+    /* Background/background4 */
+    background: #131E3A;
+    border-top: 1px solid #D6EF0E;
+    border-radius: 28px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    gap:20px;
+}
+
+.card3 {
+    /* 3 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+
+    width: 31%;
+    height: 498px;
+
+    /* Background/background4 */
+    background: #131E3A;
+    border-top: 1px solid #D6EF0E;
+    border-radius: 28px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    gap:20px;
+}
+
+.image1 {
+    /* Rectangle 9669 */
+
+    width: 90%;
+    height: 70%;
+
+    background: url(image1.png) no-repeat center;
+    border-radius: 16px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.image2 {
+    /* Rectangle 9669 */
+
+    width: 90%;
+    height: 70%;
+
+    background: url(image2.png) no-repeat center;
+    border-radius: 16px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.image3 {
+    /* Rectangle 9669 */
+
+    width: 90%;
+    height: 70%;
+
+    background: url(image3.png) no-repeat center;
+    border-radius: 16px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.description {
+    /* Frame 63 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    width: 90%;
+    height: 94px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.top {
+    /* Frame 61 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 17%;
+
+    width: 90%;
+    height: 29px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.bottom {
+    /* Frame 62 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 23%;
+
+    width: 90%;
+    height: 50px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.top_left {
+    /* Cyberpunk Cocomo */
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 60%;
+    min-height: 29px;
+
+    /* H4 */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 120%;
+    /* identical to box height, or 29px */
+
+    /* White/white stich */
+    color: #FFFFFD;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.top_right {
+    /* Frame 20 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+
+    margin: 0 auto;
+    width: 30%;
+    height: 24px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.price {
+    /* 490ETH */
+
+    width: 70%;
+    height: 19px;
+
+    /* H5 */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 120%;
+    /* or 19px */
+
+    /* White/white stich */
+    color: #FFFFFD;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.coin {
+
+    width: 18%;
+    height: 24px;
+    background: url(./etc.png) no-repeat center;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.end {
+    /* Frame 62 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0px;
+
+    width: 40%;
+    height: 50px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.in {
+    /* Frame 21 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+
+    margin: 0 auto;
+    width: 100%;
+    height: 50px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.in_top {
+    /* Ending In */
+
+    width: 100%;
+    height: 22px;
+
+    /* Body/Regular-s */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    /* or 22px */
+
+    /* White/Dissable */
+    color: #838382;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.in_bottom {
+    /* Frame 19 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+
+    width: 100%;
+    height: 24px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.time {
+    /* 03:24:56 */
+
+    width: 80%;
+    height: 19px;
+
+    /* H5 */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    /* or 19px */
+
+    /* White/white stich */
+    color: #FFFFFD;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.clock {
+    /* vuesax/linear/clock */
+
+    width: 20%;
+    height: 24px;
+    background: url(./clock.png) no-repeat center;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.end_button {
+    /* CTA */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 40px;
+
+    margin: 0 auto;
+    width: 50%;
+    height: 48px;
+
+    border: 1px solid #D6EF0E;
+    border-radius: 8px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.end_button p {
+    /* Place A Bid */
+
+    width: 88px;
+    height: 19px;
+
+    /* H5 */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    /* or 19px */
+    display: flex;
+    align-items: center;
+
+    color: #D6EF0E;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}

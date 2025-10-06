@@ -14,6 +14,8 @@ const SecondBlock = () => {
         setMousePos({ x, y });
     }, []);
 
+    const MAX_DISTANCE = 300;
+
     const calculateLine = (dot) => {
         const container = document.querySelector(`.${styles.container}`);
         const containerRect = container.getBoundingClientRect();
@@ -23,15 +25,21 @@ const SecondBlock = () => {
 
         const dx = dotX - mousePos.x;
         const dy = dotY - mousePos.y;
-        const length = Math.sqrt(dx * dx + dy * dy);
+        const distance = Math.sqrt(dx * dx + dy * dy);
+
+        if (distance > MAX_DISTANCE) {
+            return null;
+        }
+
         const angle = Math.atan2(dy, dx) * 180 / Math.PI;
 
         return {
-            width: `${length}px`,
+            width: `${distance}px`,
             transform: `rotate(${angle}deg)`,
             left: `${mousePos.x}px`,
             top: `${mousePos.y}px`,
-            transformOrigin: '0 0'
+            transformOrigin: '0 0',
+            opacity: 1 - (distance / MAX_DISTANCE) * 0.8
         };
     };
 
@@ -48,9 +56,15 @@ const SecondBlock = () => {
                         className={styles.dot}
                         style={{
                             top: `${dot.top}%`,
-                            left: `${dot.left}%`
+                            left: `${dot.left}%`,
+                            transform: 'translate(-50%, -50%)'
                         }}
-                    />
+                    >
+                        <div
+                            className={styles.cross}
+                            style={{transform: `rotate(${dot.rotation}deg)`}}
+                        ></div>
+                    </div>
                     {isHovered && (
                         <div
                             className={styles.line}

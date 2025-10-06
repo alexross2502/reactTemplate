@@ -4,16 +4,70 @@
     padding: 0 111px;
     max-width: 100%;
     height: 821px;
-    margin-top: 730px;
+    margin-top: 1480px;
+    cursor: none;
+    z-index: 0;
 }
 
 .dot {
     position: absolute;
     width: 5px;
     height: 5px;
-    background: white;
-    border-radius: 50%;
     transform: translate(-50%, -50%);
+    pointer-events: none;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
+
+.dot::before,
+.dot::after {
+    content: '';
+    position: absolute;
+    background: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dot::before {
+    width: 100%;
+    height: 1px;
+}
+
+.dot::after {
+    width: 1px;
+    height: 100%;
+}
+
+.dot .cross {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.dot .cross::before,
+.dot .cross::after {
+    content: '';
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: 1px;
+    top: 50%;
+    left: 50%;
+}
+
+.dot .cross::before {
+    transform: translate(-50%, -50%) rotate(45deg) scaleX(0.7);
+}
+
+.dot .cross::after {
+    transform: translate(-50%, -50%) rotate(-45deg) scaleX(0.7);
 }
 
 .line {
@@ -22,6 +76,7 @@
     background: white;
     transform-origin: 0 0;
     pointer-events: none;
+    transform: scaleY(0.2);
     top: 0;
     left: 0;
 }
