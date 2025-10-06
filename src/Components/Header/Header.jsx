@@ -14,7 +14,11 @@ const Header = () => {
 
           </div>
           <div className={styles.cta}>
-              <p className={styles.contact}>Contact</p>
+              <span>Contact</span>
+              <span>Contact</span>
+              <span>Contact</span>
+              <span>Contact</span>
+              <span>Contact</span>
           </div>
       </header>
   );

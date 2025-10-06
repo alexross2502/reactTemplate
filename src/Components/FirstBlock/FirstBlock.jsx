@@ -20,9 +20,13 @@ const FirstBlock = () => {
                     </div>
                     <div className={styles.cta}>
                         <div className={styles.button}>
-                           <p>Explore Now</p>
+                            <span>Explore</span>
+                            <span>Explore</span>
+                            <span>Explore</span>
+                            <span>Explore</span>
+                            <span>Explore</span>
                         </div>
-                        <div className={styles.learn}>learn more about us</div>
+
                     </div>
                 </div>
                 <div className={styles.stats}>
