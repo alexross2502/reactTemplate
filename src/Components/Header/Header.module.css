@@ -50,7 +50,6 @@
     width: 94px;
     height: 26px;
 
-    border-bottom: 1px solid #D6EF0E;
 
     /* Inside auto layout */
     flex: none;
@@ -69,13 +68,30 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
-    color: #FFFFFF;
+    color: rgba(255, 255, 253, 0.72);
     display: flex;
     align-items: center;
     justify-content: center;
     flex: none;
     order: 0;
     flex-grow: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.marketplace::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #D6EF0E;
+    transition: width 0.3s ease;
+}
+
+.marketplace:hover::after {
+    width: 100%;
 }
 
 .artists {
@@ -95,14 +111,34 @@
     flex: none;
     order: 1;
     flex-grow: 0;
-    cursor: pointer;
     transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.artists::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #D6EF0E;
+    transition: width 0.3s ease;
+}
+
+.artists:hover {
+    color: #FFFFFF;
+}
+
+.artists:hover::after {
+    width: 100%;
 }
 
 
 
 .community {
     /* Community */
+    position: relative;
     width: 87px;
     height: 26px;
     font-family: 'Inter';
@@ -117,10 +153,32 @@
     flex: none;
     order: 2;
     flex-grow: 0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.community::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #D6EF0E;
+    transition: width 0.3s ease;
+}
+
+.community:hover {
+    color: #FFFFFF;
+}
+
+.community:hover::after {
+    width: 100%;
 }
 
 .collections {
     /* Collections */
+    position: relative;
     width: 84px;
     height: 26px;
     font-family: 'Inter';
@@ -135,6 +193,27 @@
     flex: none;
     order: 3;
     flex-grow: 0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.collections::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #b8cc19;
+    transition: width 0.3s ease;
+}
+
+.collections:hover {
+    color: #FFFFFF;
+}
+
+.collections:hover::after {
+    width: 100%;
 }
 
 .cta {
@@ -152,7 +231,7 @@
     width: 143px;
     height: 48px;
 
-    background: #D6EF0E;
+    background: #96a615;
     border-radius: 8px;
 
     /* Inside auto layout */
@@ -178,8 +257,7 @@
     display: flex;
     align-items: center;
 
-    color: #FFFFFF;
-
+    color: white;
 
     /* Inside auto layout */
     flex: none;

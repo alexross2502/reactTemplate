@@ -12,7 +12,7 @@
 
     position: absolute;
     width: 100vw;
-    height: 862px;
+    height: 1428px;
     left: 0px;
     top: 760px;
 }
@@ -108,7 +108,7 @@
     width: 134px;
     height: 52px;
 
-    background: #D6EF0E;
+    background: #96a615;
     border-radius: 8px;
     justify-content: right;
     /* Inside auto layout */
@@ -225,50 +225,64 @@ gap:20px;
 
 .image1 {
     /* Rectangle 9669 */
-
     width: 90%;
     height: 70%;
-
-    background: url(image1.png) no-repeat center;
+    background: url(image1.png) no-repeat center/cover;
     border-radius: 16px;
-
-    /* Inside auto layout */
     flex: none;
     order: 0;
     flex-grow: 0;
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 1.5), box-shadow 0.3s ease;
+    transform-origin: center bottom;
+    will-change: transform;
+    position: relative;
+}
 
+.image1:hover {
+    transform: translateY(-20px) scale(1.2);
 }
 
 .image2 {
-    /* Rectangle 9669 */
+/* Rectangle 9669 */
+width: 90%;
+height: 70%;
+background: url(image2.png) no-repeat center/cover;
+border-radius: 16px;
+flex: none;
+order: 0;
+flex-grow: 0;
+transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 1.5), box-shadow 0.3s ease;
+transform-origin: center bottom;
+will-change: transform;
+position: relative;
+}
 
-    width: 90%;
-    height: 70%;
-
-    background: url(image2.png) no-repeat center;
-    border-radius: 16px;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
+.image2:hover {
+transform: translateY(-30px) scale(1.2);
+box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+z-index: 10;
 }
 
 .image3 {
-    /* Rectangle 9669 */
+/* Rectangle 9669 */
+width: 90%;
+height: 70%;
+background: url(image3.png) no-repeat center/cover;
+border-radius: 16px;
+flex: none;
+order: 0;
+flex-grow: 0;
+transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 1.5), box-shadow 0.3s ease;
+transform-origin: center bottom;
+will-change: transform;
+position: relative;
+}
 
-    width: 90%;
-    height: 70%;
-
-    background: url(image3.png) no-repeat center;
-    border-radius: 16px;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
+.image3:hover {
+transform: translateY(-30px) scale(1.2);
+box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+z-index: 10;
+    z-index: 10;
 }
 
 .description {
@@ -601,4 +615,61 @@ gap:20px;
     order: 0;
     flex-grow: 0;
 
+}
+
+.image4 {
+    /* Rectangle 9669 */
+    width: 90%;
+    height: 70%;
+    background: url(image4.png) no-repeat center/cover;
+    border-radius: 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 1.5), box-shadow 0.3s ease;
+    transform-origin: center bottom;
+    will-change: transform;
+    position: relative;
+}
+
+.image4:hover {
+    transform: translateY(-20px) scale(1.2);
+}
+
+.image5 {
+    /* Rectangle 9669 */
+    width: 90%;
+    height: 70%;
+    background: url(image5.png) no-repeat center/cover;
+    border-radius: 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 1.5), box-shadow 0.3s ease;
+    transform-origin: center bottom;
+    will-change: transform;
+    position: relative;
+}
+
+.image5:hover {
+    transform: translateY(-20px) scale(1.2);
+}
+
+.image6 {
+    /* Rectangle 9669 */
+    width: 90%;
+    height: 70%;
+    background: url(image6.png) no-repeat center/cover;
+    border-radius: 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 1.5), box-shadow 0.3s ease;
+    transform-origin: center bottom;
+    will-change: transform;
+    position: relative;
+}
+
+.image6:hover {
+    transform: translateY(-20px) scale(1.2);
 }

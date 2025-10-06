@@ -22,7 +22,7 @@ const FirstBlock = () => {
                         <div className={styles.button}>
                            <p>Explore Now</p>
                         </div>
-                        <div className={styles.learn}>learn more</div>
+                        <div className={styles.learn}>learn more about us</div>
                     </div>
                 </div>
                 <div className={styles.stats}>
