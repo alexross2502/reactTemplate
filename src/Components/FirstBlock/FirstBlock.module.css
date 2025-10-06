@@ -1,0 +1,363 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 92px 111px;
+    gap: 171px;
+
+    position: absolute;
+    width: 100vw;
+    height: 821px;
+    left: 0px;
+    top: 104px;
+}
+
+.content_left {
+    /* Content */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 72px;
+    width: 40%;
+    max-width: 600px;
+    height: 637px;
+
+    margin: 0 auto;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.content_right {
+    /* Group 4 */
+
+    margin: 0 auto;
+    width: 40%;
+    height: 637px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.main {
+    /* main content */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 50px;
+
+    width: 100%;
+    height: 350px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.title {
+    /* Title */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    width: 100%;
+    height: 250px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.subtitle1 {
+    /* Discover and Collect The Best NFTs Digital Art. */
+
+    width: 100%;
+    height: 200px;
+
+    /* H1 */
+    font-family: 'Canela';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 120%;
+    /* or 77px */
+    display: flex;
+    align-items: center;
+
+    /* White/white stich */
+    color: #FFFFFD;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.subtitle1 span {
+    color: #D6EF0E;
+}
+
+.subtitle2 {
+    /* Get started with the easiest and most secure platform to buy and trade digital ART and NFT’s. Start exploring the world of digital art and NFTs today and take control of your digital assets with confidence! */
+
+    width: 100%;
+
+    /* Body/Regular */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 160%;
+    /* or 26px */
+    display: flex;
+    align-items: center;
+
+    /* White/white stich */
+    color: #FFFFFD;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.cta {
+    /* Frame 9 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 36px;
+    margin: 0;
+
+    width: 100%;
+    height: 52px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.button {
+    /* Primary CTA */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 40px;
+
+    width: 40%;
+    height: 52px;
+
+    background: #D6EF0E;
+    border-radius: 8px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.button p {
+    /* Explore Now */
+
+    width: 98px;
+    height: 19px;
+
+    /* H5 */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    /* or 19px */
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.learn {
+    /* Learn More */
+
+    width: 30%;
+    height: 19px;
+
+    /* H5 */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    /* or 19px */
+    display: flex;
+    align-items: center;
+
+    /* White/white stich */
+    color: #FFFFFD;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.stats {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+}
+
+.stats_card1, .stats_card2, .stats_card3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    flex: 1;
+    min-width: 0;
+    border-right: 1px solid #D6EF0E;
+}
+
+.stats_card3 {
+    border-right: none;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 33%;
+    height: 92px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+
+}
+
+.number {
+    /* 8.9K */
+
+    width: 100%;
+    height: 58px;
+
+    /* H2 */
+    font-family: 'Canela';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    /* identical to box height, or 58px */
+    display: flex;
+    align-items: center;
+
+   color: white;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    justify-content: center;
+}
+
+.number span {
+    color: #D6EF0E;
+}
+
+.label {
+    /* Art work */
+
+    width: 100%;
+    height: 26px;
+
+    /* Body/Regular */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    /* identical to box height, or 26px */
+    display: flex;
+    align-items: center;
+
+    /* White/white stich */
+    color: #FFFFFD;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    justify-content: center;
+}
+
+.robot {
+    /* Group 3 */
+    position: absolute;
+    width: 40%;
+    height: 544px;
+    top: 92px;
+
+}
+
+.image {
+
+    position: absolute;
+    width: 464px;
+    height: 512px;
+
+    background: url(image.png);
+    border-radius: 24px;
+
+}
