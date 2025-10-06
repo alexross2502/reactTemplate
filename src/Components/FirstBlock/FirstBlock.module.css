@@ -409,12 +409,16 @@
 }
 
 .image {
-
     position: absolute;
     width: 464px;
     height: 512px;
     right: 111px;
     background: url(image.png) no-repeat;
     border-radius: 24px;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: center center;
+}
 
+.image:hover {
+    transform: rotate(-15deg);
 }

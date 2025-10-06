@@ -1,7 +1,52 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './ThirdBlock.module.css';
 
 const ThirdBlock = () => {
+    const [time, setTime] = useState([]);
+
+    const generateRandomSeconds = () => {
+        return Math.floor(Math.random() * (15000 - 3600 + 1)) + 3600;
+    }
+    
+    const generateRandomTime = () => {
+        return [
+            generateRandomSeconds(),
+            generateRandomSeconds(),
+            generateRandomSeconds(),
+            generateRandomSeconds(),
+            generateRandomSeconds(),
+            generateRandomSeconds()
+        ];
+    }
+
+    const formatTime = (seconds) => {
+        if (seconds === undefined || seconds === null) return '--:--:--';
+        const hours = Math.floor(seconds / 3600);
+        const minutes = Math.floor((seconds % 3600) / 60);
+        const secs = seconds % 60;
+        return [
+            hours.toString().padStart(2, '0'),
+            minutes.toString().padStart(2, '0'),
+            secs.toString().padStart(2, '0')
+        ].join(':');
+    }
+
+    useEffect(() => {
+        const initialTimes = generateRandomTime();
+        setTime(initialTimes);
+
+        const timer = setInterval(() => {
+            setTime(prevTime => {
+                if (!prevTime || !Array.isArray(prevTime) || prevTime.length === 0) {
+                    return [];
+                }
+
+                return prevTime.map(seconds => seconds > 0 ? seconds - 1 : 0);
+            });
+        }, 1000);
+
+        return () => clearInterval(timer);
+    }, [])
 
     return (
         <div className={styles.container}>
@@ -35,7 +80,7 @@ const ThirdBlock = () => {
                                 <div className={styles.in_top}>Ending In</div>
                                 <div className={styles.in_bottom}>
                                     <div className={styles.clock}></div>
-                                    <div className={styles.time}>03:24:56</div>
+                                    <div className={styles.time}>{formatTime(time[0])}</div>
                                 </div>
                             </div>
                             <div className={styles.end_button}>
@@ -61,7 +106,7 @@ const ThirdBlock = () => {
                                 <div className={styles.in_top}>Ending In</div>
                                 <div className={styles.in_bottom}>
                                     <div className={styles.clock}></div>
-                                    <div className={styles.time}>03:24:56</div>
+                                    <div className={styles.time}>{formatTime(time[1])}</div>
                                 </div>
                             </div>
                             <div className={styles.end_button}>
@@ -87,7 +132,7 @@ const ThirdBlock = () => {
                                 <div className={styles.in_top}>Ending In</div>
                                 <div className={styles.in_bottom}>
                                     <div className={styles.clock}></div>
-                                    <div className={styles.time}>03:24:56</div>
+                                    <div className={styles.time}>{formatTime(time[2])}</div>
                                 </div>
                             </div>
                             <div className={styles.end_button}>
@@ -115,7 +160,7 @@ const ThirdBlock = () => {
                                 <div className={styles.in_top}>Ending In</div>
                                 <div className={styles.in_bottom}>
                                     <div className={styles.clock}></div>
-                                    <div className={styles.time}>03:24:56</div>
+                                    <div className={styles.time}>{formatTime(time[3])}</div>
                                 </div>
                             </div>
                             <div className={styles.end_button}>
@@ -141,7 +186,7 @@ const ThirdBlock = () => {
                                 <div className={styles.in_top}>Ending In</div>
                                 <div className={styles.in_bottom}>
                                     <div className={styles.clock}></div>
-                                    <div className={styles.time}>03:24:56</div>
+                                    <div className={styles.time}>{formatTime(time[4])}</div>
                                 </div>
                             </div>
                             <div className={styles.end_button}>
@@ -167,7 +212,7 @@ const ThirdBlock = () => {
                                 <div className={styles.in_top}>Ending In</div>
                                 <div className={styles.in_bottom}>
                                     <div className={styles.clock}></div>
-                                    <div className={styles.time}>03:24:56</div>
+                                    <div className={styles.time}>{formatTime(time[5])}</div>
                                 </div>
                             </div>
                             <div className={styles.end_button}>
