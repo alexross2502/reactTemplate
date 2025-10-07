@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './Header.module.css';
 
-const Header = () => {
+const Header = ({ onOpenModal }) => {
+
   return (
       <header className={styles.navbar}>
           <div className={styles.menu}>
@@ -13,7 +14,7 @@ const Header = () => {
               <p className={styles.collections}>Collections</p>
 
           </div>
-          <div className={styles.cta}>
+          <div className={styles.cta} onClick={onOpenModal}>
               <span>Contact</span>
               <span>Contact</span>
               <span>Contact</span>

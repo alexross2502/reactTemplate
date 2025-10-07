@@ -106,7 +106,7 @@ const Animation = () => {
       pointerEvents: 'none',
       zIndex: 9998
     }}>
-      {[...Array(5)].map((_, index) => (
+      {[...Array(2)].map((_, index) => (
         <FlyingCat key={index} id={index} />
       ))}
     </div>

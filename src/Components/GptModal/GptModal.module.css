@@ -1,0 +1,223 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.overlay.overlayVisible {
+    opacity: 1;
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0.9);
+    pointer-events: auto;
+}
+
+.modal {
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 60%;
+    height: 60%;
+    overflow-y: auto;
+    transform: translateY(-100vh);
+    opacity: 0;
+    transition: all 1.2s cubic-bezier(0.68, -0.75, 0.665, 1.55);
+    will-change: transform, opacity;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #D6EF0E;
+}
+
+.modal.modalVisible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #666;
+}
+
+.overlay.overlayVisible .modal {
+    pointer-events: auto;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100vh) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.star {
+    position: absolute;
+    top: -20px;
+    background: white;
+    border-radius: 50%;
+    filter: blur(1px);
+    animation: fall linear infinite;
+    z-index: 1;
+}
+
+.inputContainer {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    margin-bottom: 10px;
+}
+
+.input {
+    width: 100%;
+    height: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+
+.input2 {
+    width: 100%;
+    height: 15%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.submitButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 40px;
+    cursor: pointer;
+    margin: 10px auto 0 auto;
+    width: 23px;
+    height: 10%;
+    position: relative;
+    border: 1px solid #D6EF0E;
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.submitButton:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.submitButton:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: ThirdBlock_glowing__Utoan 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.submitButton:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.submitButton:active:after {
+    background: transparent;
+}
+
+.submitButton:hover:before {
+    opacity: 1;
+}
+
+.submitButton p {
+    width: 100%;
+    height: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    color: #D6EF0E;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.input, .input2 {
+    resize: none;
+    background-color: rgba(15, 39, 83, 0.1);
+    color: #D6EF0E;
+}
+
+.typingCursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background-color: #D6EF0E;
+  margin-left: 2px;
+  vertical-align: middle;
+  animation: spin 1s linear infinite;
+  transform-origin: center;
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+@keyframes spin {
+  from { transform: translateX(-50%) rotate(0deg); }
+  to { transform: translateX(-50%) rotate(360deg); }
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
